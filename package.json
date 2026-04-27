@@ -1,0 +1,30 @@
+{
+  "name": "interview-ai",
+  "version": "1.0.0",
+  "description": "AI-powered interview coaching — voice analysis, resume review, and JD matching.",
+  "type": "module",
+  "scripts": {
+    "dev:client": "vite",
+    "dev:server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.3.4"
+  }
+}
